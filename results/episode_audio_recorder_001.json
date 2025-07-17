@@ -1,0 +1,68 @@
+{
+  "episode_id": "audio_recorder_001",
+  "steps": [
+    {
+      "observation": {
+        "app_name": "Home Screen",
+        "ui_elements": [
+          "Audio Recorder",
+          "Chrome",
+          "Settings",
+          "Files"
+        ],
+        "screen_text": "Home"
+      },
+      "ground_truth": "CLICK(\"Audio Recorder\")",
+      "predicted": "PRESS_BACK()",
+      "exact_match": false,
+      "fuzzy_score": 23
+    },
+    {
+      "observation": {
+        "app_name": "Audio Recorder",
+        "ui_elements": [
+          "Record",
+          "Play",
+          "List",
+          "Settings"
+        ],
+        "screen_text": "Audio Recorder"
+      },
+      "ground_truth": "CLICK(\"Record\")",
+      "predicted": "PRESS_BACK()",
+      "exact_match": false,
+      "fuzzy_score": 30
+    },
+    {
+      "observation": {
+        "app_name": "Audio Recorder",
+        "ui_elements": [
+          "Stop",
+          "Pause",
+          "Cancel"
+        ],
+        "screen_text": "Recording... 00:05"
+      },
+      "ground_truth": "CLICK(\"Stop\")",
+      "predicted": "PRESS_BACK()",
+      "exact_match": false,
+      "fuzzy_score": 32
+    },
+    {
+      "observation": {
+        "app_name": "Audio Recorder",
+        "ui_elements": [
+          "Save",
+          "Discard",
+          "Play"
+        ],
+        "screen_text": "Recording complete"
+      },
+      "ground_truth": "CLICK(\"Save\")",
+      "predicted": "PRESS_BACK()",
+      "exact_match": false,
+      "fuzzy_score": 32
+    }
+  ],
+  "success": false
+}

@@ -1,0 +1,47 @@
+{
+  "episode_id": "notes_create_001",
+  "goal": "Create a shopping list note",
+  "steps": [
+    {
+      "observation": {
+        "app_name": "Home Screen",
+        "ui_elements": [
+          "Notes",
+          "Reminders",
+          "Calendar",
+          "Tasks"
+        ],
+        "screen_text": "Home"
+      },
+      "action": "CLICK(\"Notes\")",
+      "step_id": 0
+    },
+    {
+      "observation": {
+        "app_name": "Notes",
+        "ui_elements": [
+          "New Note",
+          "Search",
+          "Recent Notes"
+        ],
+        "screen_text": "All Notes"
+      },
+      "action": "CLICK(\"New Note\")",
+      "step_id": 1
+    },
+    {
+      "observation": {
+        "app_name": "Notes",
+        "ui_elements": [
+          "Title",
+          "Note content",
+          "Save",
+          "Share"
+        ],
+        "screen_text": "New Note"
+      },
+      "action": "TYPE(\"Shopping List\")",
+      "step_id": 2
+    }
+  ]
+}

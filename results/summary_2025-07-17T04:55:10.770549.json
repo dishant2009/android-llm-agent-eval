@@ -1,0 +1,628 @@
+{
+  "total_episodes": 10,
+  "successful_episodes": 3,
+  "total_steps": 35,
+  "correct_steps": 19,
+  "episode_details": [
+    {
+      "episode_id": "audio_recorder_001",
+      "steps": [
+        {
+          "observation": {
+            "app_name": "Home Screen",
+            "ui_elements": [
+              "Audio Recorder",
+              "Chrome",
+              "Settings",
+              "Files"
+            ],
+            "screen_text": "Home"
+          },
+          "ground_truth": "CLICK(\"Audio Recorder\")",
+          "predicted": "PRESS_BACK()",
+          "exact_match": false,
+          "fuzzy_score": 23
+        },
+        {
+          "observation": {
+            "app_name": "Audio Recorder",
+            "ui_elements": [
+              "Record",
+              "Play",
+              "List",
+              "Settings"
+            ],
+            "screen_text": "Audio Recorder"
+          },
+          "ground_truth": "CLICK(\"Record\")",
+          "predicted": "PRESS_BACK()",
+          "exact_match": false,
+          "fuzzy_score": 30
+        },
+        {
+          "observation": {
+            "app_name": "Audio Recorder",
+            "ui_elements": [
+              "Stop",
+              "Pause",
+              "Cancel"
+            ],
+            "screen_text": "Recording... 00:05"
+          },
+          "ground_truth": "CLICK(\"Stop\")",
+          "predicted": "PRESS_BACK()",
+          "exact_match": false,
+          "fuzzy_score": 32
+        },
+        {
+          "observation": {
+            "app_name": "Audio Recorder",
+            "ui_elements": [
+              "Save",
+              "Discard",
+              "Play"
+            ],
+            "screen_text": "Recording complete"
+          },
+          "ground_truth": "CLICK(\"Save\")",
+          "predicted": "PRESS_BACK()",
+          "exact_match": false,
+          "fuzzy_score": 32
+        }
+      ],
+      "success": false
+    },
+    {
+      "episode_id": "browser_task_001",
+      "steps": [
+        {
+          "observation": {
+            "app_name": "Home Screen",
+            "ui_elements": [
+              "Files",
+              "Chrome",
+              "Downloads",
+              "Settings"
+            ],
+            "screen_text": "Home"
+          },
+          "ground_truth": "CLICK(\"Files\")",
+          "predicted": "PRESS_BACK()",
+          "exact_match": false,
+          "fuzzy_score": 31
+        },
+        {
+          "observation": {
+            "app_name": "Files",
+            "ui_elements": [
+              "Downloads",
+              "Documents",
+              "Pictures",
+              "Recent"
+            ],
+            "screen_text": "File Manager"
+          },
+          "ground_truth": "CLICK(\"Downloads\")",
+          "predicted": "PRESS_BACK()",
+          "exact_match": false,
+          "fuzzy_score": 27
+        },
+        {
+          "observation": {
+            "app_name": "Files",
+            "ui_elements": [
+              "task.html",
+              "document.pdf",
+              "image.jpg"
+            ],
+            "screen_text": "Downloads folder"
+          },
+          "ground_truth": "CLICK(\"task.html\")",
+          "predicted": "PRESS_BACK()",
+          "exact_match": false,
+          "fuzzy_score": 27
+        },
+        {
+          "observation": {
+            "app_name": "Files",
+            "ui_elements": [
+              "Chrome",
+              "HTML Viewer",
+              "Text Editor"
+            ],
+            "screen_text": "Open with"
+          },
+          "ground_truth": "CLICK(\"Chrome\")",
+          "predicted": "CLICK(\"Chrome\")",
+          "exact_match": true,
+          "fuzzy_score": 100
+        }
+      ],
+      "success": false
+    },
+    {
+      "episode_id": "calculator_sum_001",
+      "steps": [
+        {
+          "observation": {
+            "app_name": "Home Screen",
+            "ui_elements": [
+              "Calculator",
+              "Clock",
+              "Calendar",
+              "Notes"
+            ],
+            "screen_text": "Home"
+          },
+          "ground_truth": "CLICK(\"Calculator\")",
+          "predicted": "CLICK(\"Calculator\")",
+          "exact_match": true,
+          "fuzzy_score": 100
+        },
+        {
+          "observation": {
+            "app_name": "Calculator",
+            "ui_elements": [
+              "4",
+              "5",
+              "7",
+              "8",
+              "+",
+              "=",
+              "Clear"
+            ],
+            "screen_text": "Calculator"
+          },
+          "ground_truth": "CLICK(\"4\")",
+          "predicted": "CLICK(\"4\")",
+          "exact_match": true,
+          "fuzzy_score": 100
+        },
+        {
+          "observation": {
+            "app_name": "Calculator",
+            "ui_elements": [
+              "4",
+              "5",
+              "7",
+              "8",
+              "+",
+              "=",
+              "Clear"
+            ],
+            "screen_text": "4"
+          },
+          "ground_truth": "CLICK(\"5\")",
+          "predicted": "CLICK(\"5\")",
+          "exact_match": true,
+          "fuzzy_score": 100
+        },
+        {
+          "observation": {
+            "app_name": "Calculator",
+            "ui_elements": [
+              "4",
+              "5",
+              "7",
+              "8",
+              "+",
+              "=",
+              "Clear"
+            ],
+            "screen_text": "45"
+          },
+          "ground_truth": "CLICK(\"+\")",
+          "predicted": "CLICK(\"+\")",
+          "exact_match": true,
+          "fuzzy_score": 100
+        }
+      ],
+      "success": true
+    },
+    {
+      "episode_id": "camera_photo_001",
+      "steps": [
+        {
+          "observation": {
+            "app_name": "Home Screen",
+            "ui_elements": [
+              "Camera",
+              "Gallery",
+              "Settings",
+              "Phone"
+            ],
+            "screen_text": "Home"
+          },
+          "ground_truth": "CLICK(\"Camera\")",
+          "predicted": "CLICK(\"Camera\")",
+          "exact_match": true,
+          "fuzzy_score": 100
+        },
+        {
+          "observation": {
+            "app_name": "Camera",
+            "ui_elements": [
+              "Capture",
+              "Flash",
+              "Switch Camera",
+              "Gallery"
+            ],
+            "screen_text": "Camera ready"
+          },
+          "ground_truth": "CLICK(\"Capture\")",
+          "predicted": "CLICK(\"Capture\")",
+          "exact_match": true,
+          "fuzzy_score": 100
+        }
+      ],
+      "success": true
+    },
+    {
+      "episode_id": "install_app_001",
+      "steps": [
+        {
+          "observation": {
+            "app_name": "Home Screen",
+            "ui_elements": [
+              "Play Store",
+              "Settings",
+              "Chrome",
+              "Camera"
+            ],
+            "screen_text": "Welcome to Android"
+          },
+          "ground_truth": "CLICK(\"Play Store\")",
+          "predicted": "CLICK(\"Chrome\")",
+          "exact_match": false,
+          "fuzzy_score": 65
+        },
+        {
+          "observation": {
+            "app_name": "Play Store",
+            "ui_elements": [
+              "Search",
+              "Games",
+              "Apps",
+              "Movies"
+            ],
+            "screen_text": "Find apps and games"
+          },
+          "ground_truth": "CLICK(\"Search\")",
+          "predicted": "CLICK(\"Apps\")",
+          "exact_match": false,
+          "fuzzy_score": 64
+        },
+        {
+          "observation": {
+            "app_name": "Play Store",
+            "ui_elements": [
+              "Search box",
+              "Microphone",
+              "Camera"
+            ],
+            "screen_text": "Search for apps & games"
+          },
+          "ground_truth": "TYPE(\"Twitter\")",
+          "predicted": "CLICK(\"Search box\")",
+          "exact_match": false,
+          "fuzzy_score": 35
+        },
+        {
+          "observation": {
+            "app_name": "Play Store",
+            "ui_elements": [
+              "Twitter",
+              "TweetDeck",
+              "Hootsuite"
+            ],
+            "screen_text": "Search results for Twitter"
+          },
+          "ground_truth": "CLICK(\"Twitter\")",
+          "predicted": "CLICK(\"Twitter\")",
+          "exact_match": true,
+          "fuzzy_score": 100
+        },
+        {
+          "observation": {
+            "app_name": "Play Store",
+            "ui_elements": [
+              "Install",
+              "Screenshots",
+              "Reviews"
+            ],
+            "screen_text": "Twitter - Official App"
+          },
+          "ground_truth": "CLICK(\"Install\")",
+          "predicted": "CLICK(\"Install\")",
+          "exact_match": true,
+          "fuzzy_score": 100
+        }
+      ],
+      "success": false
+    },
+    {
+      "episode_id": "maps_navigate_001",
+      "steps": [
+        {
+          "observation": {
+            "app_name": "Home Screen",
+            "ui_elements": [
+              "Maps",
+              "Weather",
+              "Calendar",
+              "Photos"
+            ],
+            "screen_text": "Home"
+          },
+          "ground_truth": "CLICK(\"Maps\")",
+          "predicted": "CLICK(\"Maps\")",
+          "exact_match": true,
+          "fuzzy_score": 100
+        },
+        {
+          "observation": {
+            "app_name": "Maps",
+            "ui_elements": [
+              "Search",
+              "Directions",
+              "Explore",
+              "Menu"
+            ],
+            "screen_text": "Google Maps"
+          },
+          "ground_truth": "CLICK(\"Search\")",
+          "predicted": "CLICK(\"Search\")",
+          "exact_match": true,
+          "fuzzy_score": 100
+        },
+        {
+          "observation": {
+            "app_name": "Maps",
+            "ui_elements": [
+              "Search box",
+              "Voice",
+              "Recent"
+            ],
+            "screen_text": "Search places"
+          },
+          "ground_truth": "TYPE(\"Central Park\")",
+          "predicted": "TYPE(\"Recent\")",
+          "exact_match": false,
+          "fuzzy_score": 65
+        }
+      ],
+      "success": false
+    },
+    {
+      "episode_id": "notes_create_001",
+      "steps": [
+        {
+          "observation": {
+            "app_name": "Home Screen",
+            "ui_elements": [
+              "Notes",
+              "Reminders",
+              "Calendar",
+              "Tasks"
+            ],
+            "screen_text": "Home"
+          },
+          "ground_truth": "CLICK(\"Notes\")",
+          "predicted": "CLICK(\"Notes\")",
+          "exact_match": true,
+          "fuzzy_score": 100
+        },
+        {
+          "observation": {
+            "app_name": "Notes",
+            "ui_elements": [
+              "New Note",
+              "Search",
+              "Recent Notes"
+            ],
+            "screen_text": "All Notes"
+          },
+          "ground_truth": "CLICK(\"New Note\")",
+          "predicted": "CLICK(\"New Note\")",
+          "exact_match": true,
+          "fuzzy_score": 100
+        },
+        {
+          "observation": {
+            "app_name": "Notes",
+            "ui_elements": [
+              "Title",
+              "Note content",
+              "Save",
+              "Share"
+            ],
+            "screen_text": "New Note"
+          },
+          "ground_truth": "TYPE(\"Shopping List\")",
+          "predicted": "TYPE(\"Title\")",
+          "exact_match": false,
+          "fuzzy_score": 59
+        }
+      ],
+      "success": false
+    },
+    {
+      "episode_id": "send_email_001",
+      "steps": [
+        {
+          "observation": {
+            "app_name": "Home Screen",
+            "ui_elements": [
+              "Gmail",
+              "Chrome",
+              "Settings",
+              "Camera"
+            ],
+            "screen_text": "Home"
+          },
+          "ground_truth": "CLICK(\"Gmail\")",
+          "predicted": "CLICK(\"Chrome\")",
+          "exact_match": false,
+          "fuzzy_score": 69
+        },
+        {
+          "observation": {
+            "app_name": "Gmail",
+            "ui_elements": [
+              "Compose",
+              "Inbox",
+              "Sent",
+              "Drafts"
+            ],
+            "screen_text": "Gmail Inbox"
+          },
+          "ground_truth": "CLICK(\"Compose\")",
+          "predicted": "CLICK(\"Compose\")",
+          "exact_match": true,
+          "fuzzy_score": 100
+        },
+        {
+          "observation": {
+            "app_name": "Gmail",
+            "ui_elements": [
+              "To",
+              "Subject",
+              "Message",
+              "Send"
+            ],
+            "screen_text": "Compose email"
+          },
+          "ground_truth": "CLICK(\"To\")",
+          "predicted": "TYPE(\"To\")",
+          "exact_match": false,
+          "fuzzy_score": 57
+        },
+        {
+          "observation": {
+            "app_name": "Gmail",
+            "ui_elements": [
+              "Contact list",
+              "Recent",
+              "Search"
+            ],
+            "screen_text": "Select recipient"
+          },
+          "ground_truth": "TYPE(\"john@example.com\")",
+          "predicted": "TYPE(\"Contact list\")",
+          "exact_match": false,
+          "fuzzy_score": 55
+        }
+      ],
+      "success": false
+    },
+    {
+      "episode_id": "uninstall_app_001",
+      "steps": [
+        {
+          "observation": {
+            "app_name": "Home Screen",
+            "ui_elements": [
+              "Settings",
+              "Apps",
+              "Chrome",
+              "Camera"
+            ],
+            "screen_text": "Home"
+          },
+          "ground_truth": "CLICK(\"Settings\")",
+          "predicted": "CLICK(\"Settings\")",
+          "exact_match": true,
+          "fuzzy_score": 100
+        },
+        {
+          "observation": {
+            "app_name": "Settings",
+            "ui_elements": [
+              "Apps",
+              "Display",
+              "Sound",
+              "Battery"
+            ],
+            "screen_text": "Settings"
+          },
+          "ground_truth": "CLICK(\"Apps\")",
+          "predicted": "CLICK(\"Apps\")",
+          "exact_match": true,
+          "fuzzy_score": 100
+        },
+        {
+          "observation": {
+            "app_name": "Settings",
+            "ui_elements": [
+              "Chrome",
+              "Gmail",
+              "Slack",
+              "Twitter"
+            ],
+            "screen_text": "App info"
+          },
+          "ground_truth": "CLICK(\"Slack\")",
+          "predicted": "CLICK(\"Slack\")",
+          "exact_match": true,
+          "fuzzy_score": 100
+        },
+        {
+          "observation": {
+            "app_name": "Settings",
+            "ui_elements": [
+              "Uninstall",
+              "Force stop",
+              "Storage"
+            ],
+            "screen_text": "Slack app info"
+          },
+          "ground_truth": "CLICK(\"Uninstall\")",
+          "predicted": "CLICK(\"Uninstall\")",
+          "exact_match": true,
+          "fuzzy_score": 100
+        }
+      ],
+      "success": true
+    },
+    {
+      "episode_id": "weather_check_001",
+      "steps": [
+        {
+          "observation": {
+            "app_name": "Home Screen",
+            "ui_elements": [
+              "Weather",
+              "Calendar",
+              "Maps",
+              "News"
+            ],
+            "screen_text": "Home"
+          },
+          "ground_truth": "CLICK(\"Weather\")",
+          "predicted": "CLICK(\"Weather\")",
+          "exact_match": true,
+          "fuzzy_score": 100
+        },
+        {
+          "observation": {
+            "app_name": "Weather",
+            "ui_elements": [
+              "Today",
+              "7-day",
+              "Hourly",
+              "Radar"
+            ],
+            "screen_text": "Current Weather"
+          },
+          "ground_truth": "CLICK(\"7-day\")",
+          "predicted": "CLICK(\"Today\")",
+          "exact_match": false,
+          "fuzzy_score": 86
+        }
+      ],
+      "success": false
+    }
+  ],
+  "step_accuracy": 0.5428571428571428,
+  "success_rate": 0.3
+}

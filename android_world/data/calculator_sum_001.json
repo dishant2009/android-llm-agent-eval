@@ -1,0 +1,71 @@
+{
+  "episode_id": "calculator_sum_001",
+  "goal": "Calculate 45 + 78 using Calculator",
+  "steps": [
+    {
+      "observation": {
+        "app_name": "Home Screen",
+        "ui_elements": [
+          "Calculator",
+          "Clock",
+          "Calendar",
+          "Notes"
+        ],
+        "screen_text": "Home"
+      },
+      "action": "CLICK(\"Calculator\")",
+      "step_id": 0
+    },
+    {
+      "observation": {
+        "app_name": "Calculator",
+        "ui_elements": [
+          "4",
+          "5",
+          "7",
+          "8",
+          "+",
+          "=",
+          "Clear"
+        ],
+        "screen_text": "Calculator"
+      },
+      "action": "CLICK(\"4\")",
+      "step_id": 1
+    },
+    {
+      "observation": {
+        "app_name": "Calculator",
+        "ui_elements": [
+          "4",
+          "5",
+          "7",
+          "8",
+          "+",
+          "=",
+          "Clear"
+        ],
+        "screen_text": "4"
+      },
+      "action": "CLICK(\"5\")",
+      "step_id": 2
+    },
+    {
+      "observation": {
+        "app_name": "Calculator",
+        "ui_elements": [
+          "4",
+          "5",
+          "7",
+          "8",
+          "+",
+          "=",
+          "Clear"
+        ],
+        "screen_text": "45"
+      },
+      "action": "CLICK(\"+\")",
+      "step_id": 3
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "episode_id": "browser_task_001",
+  "goal": "Open task.html file in Downloads using Chrome",
+  "steps": [
+    {
+      "observation": {
+        "app_name": "Home Screen",
+        "ui_elements": [
+          "Files",
+          "Chrome",
+          "Downloads",
+          "Settings"
+        ],
+        "screen_text": "Home"
+      },
+      "action": "CLICK(\"Files\")",
+      "step_id": 0
+    },
+    {
+      "observation": {
+        "app_name": "Files",
+        "ui_elements": [
+          "Downloads",
+          "Documents",
+          "Pictures",
+          "Recent"
+        ],
+        "screen_text": "File Manager"
+      },
+      "action": "CLICK(\"Downloads\")",
+      "step_id": 1
+    },
+    {
+      "observation": {
+        "app_name": "Files",
+        "ui_elements": [
+          "task.html",
+          "document.pdf",
+          "image.jpg"
+        ],
+        "screen_text": "Downloads folder"
+      },
+      "action": "CLICK(\"task.html\")",
+      "step_id": 2
+    },
+    {
+      "observation": {
+        "app_name": "Files",
+        "ui_elements": [
+          "Chrome",
+          "HTML Viewer",
+          "Text Editor"
+        ],
+        "screen_text": "Open with"
+      },
+      "action": "CLICK(\"Chrome\")",
+      "step_id": 3
+    }
+  ]
+}

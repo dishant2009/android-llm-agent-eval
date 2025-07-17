@@ -1,0 +1,61 @@
+{
+  "episode_id": "send_email_001",
+  "goal": "Send an email using Gmail",
+  "steps": [
+    {
+      "observation": {
+        "app_name": "Home Screen",
+        "ui_elements": [
+          "Gmail",
+          "Chrome",
+          "Settings",
+          "Camera"
+        ],
+        "screen_text": "Home"
+      },
+      "action": "CLICK(\"Gmail\")",
+      "step_id": 0
+    },
+    {
+      "observation": {
+        "app_name": "Gmail",
+        "ui_elements": [
+          "Compose",
+          "Inbox",
+          "Sent",
+          "Drafts"
+        ],
+        "screen_text": "Gmail Inbox"
+      },
+      "action": "CLICK(\"Compose\")",
+      "step_id": 1
+    },
+    {
+      "observation": {
+        "app_name": "Gmail",
+        "ui_elements": [
+          "To",
+          "Subject",
+          "Message",
+          "Send"
+        ],
+        "screen_text": "Compose email"
+      },
+      "action": "CLICK(\"To\")",
+      "step_id": 2
+    },
+    {
+      "observation": {
+        "app_name": "Gmail",
+        "ui_elements": [
+          "Contact list",
+          "Recent",
+          "Search"
+        ],
+        "screen_text": "Select recipient"
+      },
+      "action": "TYPE(\"john@example.com\")",
+      "step_id": 3
+    }
+  ]
+}

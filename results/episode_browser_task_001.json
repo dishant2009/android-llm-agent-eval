@@ -1,0 +1,68 @@
+{
+  "episode_id": "browser_task_001",
+  "steps": [
+    {
+      "observation": {
+        "app_name": "Home Screen",
+        "ui_elements": [
+          "Files",
+          "Chrome",
+          "Downloads",
+          "Settings"
+        ],
+        "screen_text": "Home"
+      },
+      "ground_truth": "CLICK(\"Files\")",
+      "predicted": "CLICK('Files')",
+      "exact_match": false,
+      "fuzzy_score": 86
+    },
+    {
+      "observation": {
+        "app_name": "Files",
+        "ui_elements": [
+          "Downloads",
+          "Documents",
+          "Pictures",
+          "Recent"
+        ],
+        "screen_text": "File Manager"
+      },
+      "ground_truth": "CLICK(\"Downloads\")",
+      "predicted": "CLICK('Downloads')",
+      "exact_match": false,
+      "fuzzy_score": 89
+    },
+    {
+      "observation": {
+        "app_name": "Files",
+        "ui_elements": [
+          "task.html",
+          "document.pdf",
+          "image.jpg"
+        ],
+        "screen_text": "Downloads folder"
+      },
+      "ground_truth": "CLICK(\"task.html\")",
+      "predicted": "CLICK('task.html')",
+      "exact_match": false,
+      "fuzzy_score": 89
+    },
+    {
+      "observation": {
+        "app_name": "Files",
+        "ui_elements": [
+          "Chrome",
+          "HTML Viewer",
+          "Text Editor"
+        ],
+        "screen_text": "Open with"
+      },
+      "ground_truth": "CLICK(\"Chrome\")",
+      "predicted": "CLICK('Chrome')",
+      "exact_match": false,
+      "fuzzy_score": 87
+    }
+  ],
+  "success": false
+}

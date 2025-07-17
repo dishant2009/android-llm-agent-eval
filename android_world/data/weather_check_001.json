@@ -1,0 +1,34 @@
+{
+  "episode_id": "weather_check_001",
+  "goal": "Check weather forecast in Weather app",
+  "steps": [
+    {
+      "observation": {
+        "app_name": "Home Screen",
+        "ui_elements": [
+          "Weather",
+          "Calendar",
+          "Maps",
+          "News"
+        ],
+        "screen_text": "Home"
+      },
+      "action": "CLICK(\"Weather\")",
+      "step_id": 0
+    },
+    {
+      "observation": {
+        "app_name": "Weather",
+        "ui_elements": [
+          "Today",
+          "7-day",
+          "Hourly",
+          "Radar"
+        ],
+        "screen_text": "Current Weather"
+      },
+      "action": "CLICK(\"7-day\")",
+      "step_id": 1
+    }
+  ]
+}

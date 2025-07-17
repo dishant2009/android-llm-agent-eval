@@ -1,0 +1,38 @@
+{
+  "episode_id": "weather_check_001",
+  "steps": [
+    {
+      "observation": {
+        "app_name": "Home Screen",
+        "ui_elements": [
+          "Weather",
+          "Calendar",
+          "Maps",
+          "News"
+        ],
+        "screen_text": "Home"
+      },
+      "ground_truth": "CLICK(\"Weather\")",
+      "predicted": "CLICK('Weather')",
+      "exact_match": false,
+      "fuzzy_score": 88
+    },
+    {
+      "observation": {
+        "app_name": "Weather",
+        "ui_elements": [
+          "Today",
+          "7-day",
+          "Hourly",
+          "Radar"
+        ],
+        "screen_text": "Current Weather"
+      },
+      "ground_truth": "CLICK(\"7-day\")",
+      "predicted": "CLICK('7-day')",
+      "exact_match": false,
+      "fuzzy_score": 86
+    }
+  ],
+  "success": false
+}

@@ -1,0 +1,69 @@
+{
+  "episode_id": "send_email_001",
+  "steps": [
+    {
+      "observation": {
+        "app_name": "Home Screen",
+        "ui_elements": [
+          "Gmail",
+          "Chrome",
+          "Settings",
+          "Camera"
+        ],
+        "screen_text": "Home"
+      },
+      "ground_truth": "CLICK(\"Gmail\")",
+      "predicted": "CLICK('Gmail')",
+      "exact_match": false,
+      "fuzzy_score": 86
+    },
+    {
+      "observation": {
+        "app_name": "Gmail",
+        "ui_elements": [
+          "Compose",
+          "Inbox",
+          "Sent",
+          "Drafts"
+        ],
+        "screen_text": "Gmail Inbox"
+      },
+      "ground_truth": "CLICK(\"Compose\")",
+      "predicted": "CLICK('Compose')",
+      "exact_match": false,
+      "fuzzy_score": 88
+    },
+    {
+      "observation": {
+        "app_name": "Gmail",
+        "ui_elements": [
+          "To",
+          "Subject",
+          "Message",
+          "Send"
+        ],
+        "screen_text": "Compose email"
+      },
+      "ground_truth": "CLICK(\"To\")",
+      "predicted": "CLICK('To')",
+      "exact_match": false,
+      "fuzzy_score": 82
+    },
+    {
+      "observation": {
+        "app_name": "Gmail",
+        "ui_elements": [
+          "Contact list",
+          "Recent",
+          "Search"
+        ],
+        "screen_text": "Select recipient"
+      },
+      "ground_truth": "TYPE(\"john@example.com\")",
+      "predicted": "CLICK('Search')",
+      "exact_match": false,
+      "fuzzy_score": 26
+    }
+  ],
+  "success": false
+}

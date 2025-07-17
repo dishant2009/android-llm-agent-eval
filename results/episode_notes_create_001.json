@@ -1,0 +1,53 @@
+{
+  "episode_id": "notes_create_001",
+  "steps": [
+    {
+      "observation": {
+        "app_name": "Home Screen",
+        "ui_elements": [
+          "Notes",
+          "Reminders",
+          "Calendar",
+          "Tasks"
+        ],
+        "screen_text": "Home"
+      },
+      "ground_truth": "CLICK(\"Notes\")",
+      "predicted": "CLICK('Notes')",
+      "exact_match": false,
+      "fuzzy_score": 86
+    },
+    {
+      "observation": {
+        "app_name": "Notes",
+        "ui_elements": [
+          "New Note",
+          "Search",
+          "Recent Notes"
+        ],
+        "screen_text": "All Notes"
+      },
+      "ground_truth": "CLICK(\"New Note\")",
+      "predicted": "CLICK('New Note')",
+      "exact_match": false,
+      "fuzzy_score": 88
+    },
+    {
+      "observation": {
+        "app_name": "Notes",
+        "ui_elements": [
+          "Title",
+          "Note content",
+          "Save",
+          "Share"
+        ],
+        "screen_text": "New Note"
+      },
+      "ground_truth": "TYPE(\"Shopping List\")",
+      "predicted": "CLICK('Title')",
+      "exact_match": false,
+      "fuzzy_score": 23
+    }
+  ],
+  "success": false
+}

@@ -1,0 +1,61 @@
+{
+  "episode_id": "uninstall_app_001",
+  "goal": "Uninstall the Slack app",
+  "steps": [
+    {
+      "observation": {
+        "app_name": "Home Screen",
+        "ui_elements": [
+          "Settings",
+          "Apps",
+          "Chrome",
+          "Camera"
+        ],
+        "screen_text": "Home"
+      },
+      "action": "CLICK(\"Settings\")",
+      "step_id": 0
+    },
+    {
+      "observation": {
+        "app_name": "Settings",
+        "ui_elements": [
+          "Apps",
+          "Display",
+          "Sound",
+          "Battery"
+        ],
+        "screen_text": "Settings"
+      },
+      "action": "CLICK(\"Apps\")",
+      "step_id": 1
+    },
+    {
+      "observation": {
+        "app_name": "Settings",
+        "ui_elements": [
+          "Chrome",
+          "Gmail",
+          "Slack",
+          "Twitter"
+        ],
+        "screen_text": "App info"
+      },
+      "action": "CLICK(\"Slack\")",
+      "step_id": 2
+    },
+    {
+      "observation": {
+        "app_name": "Settings",
+        "ui_elements": [
+          "Uninstall",
+          "Force stop",
+          "Storage"
+        ],
+        "screen_text": "Slack app info"
+      },
+      "action": "CLICK(\"Uninstall\")",
+      "step_id": 3
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "episode_id": "camera_photo_001",
+  "steps": [
+    {
+      "observation": {
+        "app_name": "Home Screen",
+        "ui_elements": [
+          "Camera",
+          "Gallery",
+          "Settings",
+          "Phone"
+        ],
+        "screen_text": "Home"
+      },
+      "ground_truth": "CLICK(\"Camera\")",
+      "predicted": "CLICK('Camera')",
+      "exact_match": false,
+      "fuzzy_score": 87
+    },
+    {
+      "observation": {
+        "app_name": "Camera",
+        "ui_elements": [
+          "Capture",
+          "Flash",
+          "Switch Camera",
+          "Gallery"
+        ],
+        "screen_text": "Camera ready"
+      },
+      "ground_truth": "CLICK(\"Capture\")",
+      "predicted": "CLICK('Capture')",
+      "exact_match": false,
+      "fuzzy_score": 88
+    }
+  ],
+  "success": false
+}

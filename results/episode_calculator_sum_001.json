@@ -1,0 +1,79 @@
+{
+  "episode_id": "calculator_sum_001",
+  "steps": [
+    {
+      "observation": {
+        "app_name": "Home Screen",
+        "ui_elements": [
+          "Calculator",
+          "Clock",
+          "Calendar",
+          "Notes"
+        ],
+        "screen_text": "Home"
+      },
+      "ground_truth": "CLICK(\"Calculator\")",
+      "predicted": "CLICK('Calculator')",
+      "exact_match": false,
+      "fuzzy_score": 89
+    },
+    {
+      "observation": {
+        "app_name": "Calculator",
+        "ui_elements": [
+          "4",
+          "5",
+          "7",
+          "8",
+          "+",
+          "=",
+          "Clear"
+        ],
+        "screen_text": "Calculator"
+      },
+      "ground_truth": "CLICK(\"4\")",
+      "predicted": "CLICK('4')",
+      "exact_match": false,
+      "fuzzy_score": 80
+    },
+    {
+      "observation": {
+        "app_name": "Calculator",
+        "ui_elements": [
+          "4",
+          "5",
+          "7",
+          "8",
+          "+",
+          "=",
+          "Clear"
+        ],
+        "screen_text": "4"
+      },
+      "ground_truth": "CLICK(\"5\")",
+      "predicted": "CLICK('Clear')",
+      "exact_match": false,
+      "fuzzy_score": 58
+    },
+    {
+      "observation": {
+        "app_name": "Calculator",
+        "ui_elements": [
+          "4",
+          "5",
+          "7",
+          "8",
+          "+",
+          "=",
+          "Clear"
+        ],
+        "screen_text": "45"
+      },
+      "ground_truth": "CLICK(\"+\")",
+      "predicted": "CLICK('+')",
+      "exact_match": false,
+      "fuzzy_score": 80
+    }
+  ],
+  "success": false
+}

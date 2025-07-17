@@ -1,0 +1,32 @@
+[
+  {
+    "goal": "Uninstall Slack app",
+    "observation": "App=Settings, UI=[\"Apps\", \"Display\", \"Sound\", \"Battery\"]",
+    "reasoning": "To uninstall an app, I need to access app management through Settings → Apps",
+    "action": "CLICK(\"Apps\")"
+  },
+  {
+    "goal": "Send email in Gmail",
+    "observation": "App=Gmail, UI=[\"Compose\", \"Inbox\", \"Sent\", \"Drafts\"]",
+    "reasoning": "To send a new email, I should start by creating a new message",
+    "action": "CLICK(\"Compose\")"
+  },
+  {
+    "goal": "Open Chrome settings",
+    "observation": "App=Chrome, UI=[\"Menu\", \"Tabs\", \"Settings\", \"Downloads\"]",
+    "reasoning": "Need to access browser settings via menu",
+    "action": "CLICK(\"Settings\")"
+  },
+  {
+    "goal": "Play next song in Spotify",
+    "observation": "App=Spotify, UI=[\"Play\", \"Next\", \"Previous\", \"Shuffle\"]",
+    "reasoning": "Next button will play the next song",
+    "action": "CLICK(\"Next\")"
+  },
+  {
+    "goal": "Search contacts in Phone app",
+    "observation": "App=Phone, UI=[\"Keypad\", \"Contacts\", \"Recents\", \"Voicemail\"]",
+    "reasoning": "To search contacts, open Contacts tab",
+    "action": "CLICK(\"Contacts\")"
+  }
+] 

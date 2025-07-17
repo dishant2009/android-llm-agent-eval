@@ -1,0 +1,73 @@
+{
+  "episode_id": "install_app_001",
+  "goal": "Install the Twitter app from the Play Store",
+  "steps": [
+    {
+      "observation": {
+        "app_name": "Home Screen",
+        "ui_elements": [
+          "Play Store",
+          "Settings",
+          "Chrome",
+          "Camera"
+        ],
+        "screen_text": "Welcome to Android"
+      },
+      "action": "CLICK(\"Play Store\")",
+      "step_id": 0
+    },
+    {
+      "observation": {
+        "app_name": "Play Store",
+        "ui_elements": [
+          "Search",
+          "Games",
+          "Apps",
+          "Movies"
+        ],
+        "screen_text": "Find apps and games"
+      },
+      "action": "CLICK(\"Search\")",
+      "step_id": 1
+    },
+    {
+      "observation": {
+        "app_name": "Play Store",
+        "ui_elements": [
+          "Search box",
+          "Microphone",
+          "Camera"
+        ],
+        "screen_text": "Search for apps & games"
+      },
+      "action": "TYPE(\"Twitter\")",
+      "step_id": 2
+    },
+    {
+      "observation": {
+        "app_name": "Play Store",
+        "ui_elements": [
+          "Twitter",
+          "TweetDeck",
+          "Hootsuite"
+        ],
+        "screen_text": "Search results for Twitter"
+      },
+      "action": "CLICK(\"Twitter\")",
+      "step_id": 3
+    },
+    {
+      "observation": {
+        "app_name": "Play Store",
+        "ui_elements": [
+          "Install",
+          "Screenshots",
+          "Reviews"
+        ],
+        "screen_text": "Twitter - Official App"
+      },
+      "action": "CLICK(\"Install\")",
+      "step_id": 4
+    }
+  ]
+}

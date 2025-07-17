@@ -1,0 +1,670 @@
+{
+  "summary": {
+    "episodes_analyzed": 10,
+    "total_steps": 35,
+    "correct_steps": 0,
+    "step_accuracy": 0.0
+  },
+  "hallucinations": [],
+  "action_type_errors": {
+    "CLICK -> PRESS": 31,
+    "TYPE -> PRESS": 4
+  },
+  "goal_misinterpretations": [
+    {
+      "episode": "send_email_001",
+      "predicted": "PRESS_BACK()",
+      "ground_truth": "CLICK(\"Gmail\")",
+      "ui_elements": [
+        "Gmail",
+        "Chrome",
+        "Settings",
+        "Camera"
+      ]
+    },
+    {
+      "episode": "uninstall_app_001",
+      "predicted": "PRESS_BACK()",
+      "ground_truth": "CLICK(\"Settings\")",
+      "ui_elements": [
+        "Settings",
+        "Apps",
+        "Chrome",
+        "Camera"
+      ]
+    },
+    {
+      "episode": "camera_photo_001",
+      "predicted": "PRESS_BACK()",
+      "ground_truth": "CLICK(\"Camera\")",
+      "ui_elements": [
+        "Camera",
+        "Gallery",
+        "Settings",
+        "Phone"
+      ]
+    },
+    {
+      "episode": "weather_check_001",
+      "predicted": "PRESS_BACK()",
+      "ground_truth": "CLICK(\"Weather\")",
+      "ui_elements": [
+        "Weather",
+        "Calendar",
+        "Maps",
+        "News"
+      ]
+    },
+    {
+      "episode": "maps_navigate_001",
+      "predicted": "PRESS_BACK()",
+      "ground_truth": "CLICK(\"Maps\")",
+      "ui_elements": [
+        "Maps",
+        "Weather",
+        "Calendar",
+        "Photos"
+      ]
+    },
+    {
+      "episode": "calculator_sum_001",
+      "predicted": "PRESS_BACK()",
+      "ground_truth": "CLICK(\"Calculator\")",
+      "ui_elements": [
+        "Calculator",
+        "Clock",
+        "Calendar",
+        "Notes"
+      ]
+    },
+    {
+      "episode": "notes_create_001",
+      "predicted": "PRESS_BACK()",
+      "ground_truth": "CLICK(\"Notes\")",
+      "ui_elements": [
+        "Notes",
+        "Reminders",
+        "Calendar",
+        "Tasks"
+      ]
+    },
+    {
+      "episode": "audio_recorder_001",
+      "predicted": "PRESS_BACK()",
+      "ground_truth": "CLICK(\"Audio Recorder\")",
+      "ui_elements": [
+        "Audio Recorder",
+        "Chrome",
+        "Settings",
+        "Files"
+      ]
+    },
+    {
+      "episode": "browser_task_001",
+      "predicted": "PRESS_BACK()",
+      "ground_truth": "CLICK(\"Files\")",
+      "ui_elements": [
+        "Files",
+        "Chrome",
+        "Downloads",
+        "Settings"
+      ]
+    },
+    {
+      "episode": "install_app_001",
+      "predicted": "PRESS_BACK()",
+      "ground_truth": "CLICK(\"Play Store\")",
+      "ui_elements": [
+        "Play Store",
+        "Settings",
+        "Chrome",
+        "Camera"
+      ]
+    }
+  ],
+  "failure_patterns": {
+    "send_email_001": [
+      {
+        "step": 0,
+        "app": "Home Screen",
+        "predicted": "PRESS_BACK()",
+        "ground_truth": "CLICK(\"Gmail\")",
+        "ui_elements": [
+          "Gmail",
+          "Chrome",
+          "Settings",
+          "Camera"
+        ],
+        "predicted_type": "PRESS",
+        "ground_truth_type": "CLICK",
+        "is_hallucination": false
+      },
+      {
+        "step": 1,
+        "app": "Gmail",
+        "predicted": "PRESS_BACK()",
+        "ground_truth": "CLICK(\"Compose\")",
+        "ui_elements": [
+          "Compose",
+          "Inbox",
+          "Sent",
+          "Drafts"
+        ],
+        "predicted_type": "PRESS",
+        "ground_truth_type": "CLICK",
+        "is_hallucination": false
+      },
+      {
+        "step": 2,
+        "app": "Gmail",
+        "predicted": "PRESS_BACK()",
+        "ground_truth": "CLICK(\"To\")",
+        "ui_elements": [
+          "To",
+          "Subject",
+          "Message",
+          "Send"
+        ],
+        "predicted_type": "PRESS",
+        "ground_truth_type": "CLICK",
+        "is_hallucination": false
+      },
+      {
+        "step": 3,
+        "app": "Gmail",
+        "predicted": "PRESS_BACK()",
+        "ground_truth": "TYPE(\"john@example.com\")",
+        "ui_elements": [
+          "Contact list",
+          "Recent",
+          "Search"
+        ],
+        "predicted_type": "PRESS",
+        "ground_truth_type": "TYPE",
+        "is_hallucination": false
+      }
+    ],
+    "uninstall_app_001": [
+      {
+        "step": 0,
+        "app": "Home Screen",
+        "predicted": "PRESS_BACK()",
+        "ground_truth": "CLICK(\"Settings\")",
+        "ui_elements": [
+          "Settings",
+          "Apps",
+          "Chrome",
+          "Camera"
+        ],
+        "predicted_type": "PRESS",
+        "ground_truth_type": "CLICK",
+        "is_hallucination": false
+      },
+      {
+        "step": 1,
+        "app": "Settings",
+        "predicted": "PRESS_BACK()",
+        "ground_truth": "CLICK(\"Apps\")",
+        "ui_elements": [
+          "Apps",
+          "Display",
+          "Sound",
+          "Battery"
+        ],
+        "predicted_type": "PRESS",
+        "ground_truth_type": "CLICK",
+        "is_hallucination": false
+      },
+      {
+        "step": 2,
+        "app": "Settings",
+        "predicted": "PRESS_BACK()",
+        "ground_truth": "CLICK(\"Slack\")",
+        "ui_elements": [
+          "Chrome",
+          "Gmail",
+          "Slack",
+          "Twitter"
+        ],
+        "predicted_type": "PRESS",
+        "ground_truth_type": "CLICK",
+        "is_hallucination": false
+      },
+      {
+        "step": 3,
+        "app": "Settings",
+        "predicted": "PRESS_BACK()",
+        "ground_truth": "CLICK(\"Uninstall\")",
+        "ui_elements": [
+          "Uninstall",
+          "Force stop",
+          "Storage"
+        ],
+        "predicted_type": "PRESS",
+        "ground_truth_type": "CLICK",
+        "is_hallucination": false
+      }
+    ],
+    "camera_photo_001": [
+      {
+        "step": 0,
+        "app": "Home Screen",
+        "predicted": "PRESS_BACK()",
+        "ground_truth": "CLICK(\"Camera\")",
+        "ui_elements": [
+          "Camera",
+          "Gallery",
+          "Settings",
+          "Phone"
+        ],
+        "predicted_type": "PRESS",
+        "ground_truth_type": "CLICK",
+        "is_hallucination": false
+      },
+      {
+        "step": 1,
+        "app": "Camera",
+        "predicted": "PRESS_BACK()",
+        "ground_truth": "CLICK(\"Capture\")",
+        "ui_elements": [
+          "Capture",
+          "Flash",
+          "Switch Camera",
+          "Gallery"
+        ],
+        "predicted_type": "PRESS",
+        "ground_truth_type": "CLICK",
+        "is_hallucination": false
+      }
+    ],
+    "weather_check_001": [
+      {
+        "step": 0,
+        "app": "Home Screen",
+        "predicted": "PRESS_BACK()",
+        "ground_truth": "CLICK(\"Weather\")",
+        "ui_elements": [
+          "Weather",
+          "Calendar",
+          "Maps",
+          "News"
+        ],
+        "predicted_type": "PRESS",
+        "ground_truth_type": "CLICK",
+        "is_hallucination": false
+      },
+      {
+        "step": 1,
+        "app": "Weather",
+        "predicted": "PRESS_BACK()",
+        "ground_truth": "CLICK(\"7-day\")",
+        "ui_elements": [
+          "Today",
+          "7-day",
+          "Hourly",
+          "Radar"
+        ],
+        "predicted_type": "PRESS",
+        "ground_truth_type": "CLICK",
+        "is_hallucination": false
+      }
+    ],
+    "maps_navigate_001": [
+      {
+        "step": 0,
+        "app": "Home Screen",
+        "predicted": "PRESS_BACK()",
+        "ground_truth": "CLICK(\"Maps\")",
+        "ui_elements": [
+          "Maps",
+          "Weather",
+          "Calendar",
+          "Photos"
+        ],
+        "predicted_type": "PRESS",
+        "ground_truth_type": "CLICK",
+        "is_hallucination": false
+      },
+      {
+        "step": 1,
+        "app": "Maps",
+        "predicted": "PRESS_BACK()",
+        "ground_truth": "CLICK(\"Search\")",
+        "ui_elements": [
+          "Search",
+          "Directions",
+          "Explore",
+          "Menu"
+        ],
+        "predicted_type": "PRESS",
+        "ground_truth_type": "CLICK",
+        "is_hallucination": false
+      },
+      {
+        "step": 2,
+        "app": "Maps",
+        "predicted": "PRESS_BACK()",
+        "ground_truth": "TYPE(\"Central Park\")",
+        "ui_elements": [
+          "Search box",
+          "Voice",
+          "Recent"
+        ],
+        "predicted_type": "PRESS",
+        "ground_truth_type": "TYPE",
+        "is_hallucination": false
+      }
+    ],
+    "calculator_sum_001": [
+      {
+        "step": 0,
+        "app": "Home Screen",
+        "predicted": "PRESS_BACK()",
+        "ground_truth": "CLICK(\"Calculator\")",
+        "ui_elements": [
+          "Calculator",
+          "Clock",
+          "Calendar",
+          "Notes"
+        ],
+        "predicted_type": "PRESS",
+        "ground_truth_type": "CLICK",
+        "is_hallucination": false
+      },
+      {
+        "step": 1,
+        "app": "Calculator",
+        "predicted": "PRESS_BACK()",
+        "ground_truth": "CLICK(\"4\")",
+        "ui_elements": [
+          "4",
+          "5",
+          "7",
+          "8",
+          "+",
+          "=",
+          "Clear"
+        ],
+        "predicted_type": "PRESS",
+        "ground_truth_type": "CLICK",
+        "is_hallucination": false
+      },
+      {
+        "step": 2,
+        "app": "Calculator",
+        "predicted": "PRESS_BACK()",
+        "ground_truth": "CLICK(\"5\")",
+        "ui_elements": [
+          "4",
+          "5",
+          "7",
+          "8",
+          "+",
+          "=",
+          "Clear"
+        ],
+        "predicted_type": "PRESS",
+        "ground_truth_type": "CLICK",
+        "is_hallucination": false
+      },
+      {
+        "step": 3,
+        "app": "Calculator",
+        "predicted": "PRESS_BACK()",
+        "ground_truth": "CLICK(\"+\")",
+        "ui_elements": [
+          "4",
+          "5",
+          "7",
+          "8",
+          "+",
+          "=",
+          "Clear"
+        ],
+        "predicted_type": "PRESS",
+        "ground_truth_type": "CLICK",
+        "is_hallucination": false
+      }
+    ],
+    "notes_create_001": [
+      {
+        "step": 0,
+        "app": "Home Screen",
+        "predicted": "PRESS_BACK()",
+        "ground_truth": "CLICK(\"Notes\")",
+        "ui_elements": [
+          "Notes",
+          "Reminders",
+          "Calendar",
+          "Tasks"
+        ],
+        "predicted_type": "PRESS",
+        "ground_truth_type": "CLICK",
+        "is_hallucination": false
+      },
+      {
+        "step": 1,
+        "app": "Notes",
+        "predicted": "PRESS_BACK()",
+        "ground_truth": "CLICK(\"New Note\")",
+        "ui_elements": [
+          "New Note",
+          "Search",
+          "Recent Notes"
+        ],
+        "predicted_type": "PRESS",
+        "ground_truth_type": "CLICK",
+        "is_hallucination": false
+      },
+      {
+        "step": 2,
+        "app": "Notes",
+        "predicted": "PRESS_BACK()",
+        "ground_truth": "TYPE(\"Shopping List\")",
+        "ui_elements": [
+          "Title",
+          "Note content",
+          "Save",
+          "Share"
+        ],
+        "predicted_type": "PRESS",
+        "ground_truth_type": "TYPE",
+        "is_hallucination": false
+      }
+    ],
+    "audio_recorder_001": [
+      {
+        "step": 0,
+        "app": "Home Screen",
+        "predicted": "PRESS_BACK()",
+        "ground_truth": "CLICK(\"Audio Recorder\")",
+        "ui_elements": [
+          "Audio Recorder",
+          "Chrome",
+          "Settings",
+          "Files"
+        ],
+        "predicted_type": "PRESS",
+        "ground_truth_type": "CLICK",
+        "is_hallucination": false
+      },
+      {
+        "step": 1,
+        "app": "Audio Recorder",
+        "predicted": "PRESS_BACK()",
+        "ground_truth": "CLICK(\"Record\")",
+        "ui_elements": [
+          "Record",
+          "Play",
+          "List",
+          "Settings"
+        ],
+        "predicted_type": "PRESS",
+        "ground_truth_type": "CLICK",
+        "is_hallucination": false
+      },
+      {
+        "step": 2,
+        "app": "Audio Recorder",
+        "predicted": "PRESS_BACK()",
+        "ground_truth": "CLICK(\"Stop\")",
+        "ui_elements": [
+          "Stop",
+          "Pause",
+          "Cancel"
+        ],
+        "predicted_type": "PRESS",
+        "ground_truth_type": "CLICK",
+        "is_hallucination": false
+      },
+      {
+        "step": 3,
+        "app": "Audio Recorder",
+        "predicted": "PRESS_BACK()",
+        "ground_truth": "CLICK(\"Save\")",
+        "ui_elements": [
+          "Save",
+          "Discard",
+          "Play"
+        ],
+        "predicted_type": "PRESS",
+        "ground_truth_type": "CLICK",
+        "is_hallucination": false
+      }
+    ],
+    "browser_task_001": [
+      {
+        "step": 0,
+        "app": "Home Screen",
+        "predicted": "PRESS_BACK()",
+        "ground_truth": "CLICK(\"Files\")",
+        "ui_elements": [
+          "Files",
+          "Chrome",
+          "Downloads",
+          "Settings"
+        ],
+        "predicted_type": "PRESS",
+        "ground_truth_type": "CLICK",
+        "is_hallucination": false
+      },
+      {
+        "step": 1,
+        "app": "Files",
+        "predicted": "PRESS_BACK()",
+        "ground_truth": "CLICK(\"Downloads\")",
+        "ui_elements": [
+          "Downloads",
+          "Documents",
+          "Pictures",
+          "Recent"
+        ],
+        "predicted_type": "PRESS",
+        "ground_truth_type": "CLICK",
+        "is_hallucination": false
+      },
+      {
+        "step": 2,
+        "app": "Files",
+        "predicted": "PRESS_BACK()",
+        "ground_truth": "CLICK(\"task.html\")",
+        "ui_elements": [
+          "task.html",
+          "document.pdf",
+          "image.jpg"
+        ],
+        "predicted_type": "PRESS",
+        "ground_truth_type": "CLICK",
+        "is_hallucination": false
+      },
+      {
+        "step": 3,
+        "app": "Files",
+        "predicted": "PRESS_BACK()",
+        "ground_truth": "CLICK(\"Chrome\")",
+        "ui_elements": [
+          "Chrome",
+          "HTML Viewer",
+          "Text Editor"
+        ],
+        "predicted_type": "PRESS",
+        "ground_truth_type": "CLICK",
+        "is_hallucination": false
+      }
+    ],
+    "install_app_001": [
+      {
+        "step": 0,
+        "app": "Home Screen",
+        "predicted": "PRESS_BACK()",
+        "ground_truth": "CLICK(\"Play Store\")",
+        "ui_elements": [
+          "Play Store",
+          "Settings",
+          "Chrome",
+          "Camera"
+        ],
+        "predicted_type": "PRESS",
+        "ground_truth_type": "CLICK",
+        "is_hallucination": false
+      },
+      {
+        "step": 1,
+        "app": "Play Store",
+        "predicted": "PRESS_BACK()",
+        "ground_truth": "CLICK(\"Search\")",
+        "ui_elements": [
+          "Search",
+          "Games",
+          "Apps",
+          "Movies"
+        ],
+        "predicted_type": "PRESS",
+        "ground_truth_type": "CLICK",
+        "is_hallucination": false
+      },
+      {
+        "step": 2,
+        "app": "Play Store",
+        "predicted": "PRESS_BACK()",
+        "ground_truth": "TYPE(\"Twitter\")",
+        "ui_elements": [
+          "Search box",
+          "Microphone",
+          "Camera"
+        ],
+        "predicted_type": "PRESS",
+        "ground_truth_type": "TYPE",
+        "is_hallucination": false
+      },
+      {
+        "step": 3,
+        "app": "Play Store",
+        "predicted": "PRESS_BACK()",
+        "ground_truth": "CLICK(\"Twitter\")",
+        "ui_elements": [
+          "Twitter",
+          "TweetDeck",
+          "Hootsuite"
+        ],
+        "predicted_type": "PRESS",
+        "ground_truth_type": "CLICK",
+        "is_hallucination": false
+      },
+      {
+        "step": 4,
+        "app": "Play Store",
+        "predicted": "PRESS_BACK()",
+        "ground_truth": "CLICK(\"Install\")",
+        "ui_elements": [
+          "Install",
+          "Screenshots",
+          "Reviews"
+        ],
+        "predicted_type": "PRESS",
+        "ground_truth_type": "CLICK",
+        "is_hallucination": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "episode_id": "maps_navigate_001",
+  "goal": "Navigate to Central Park using Maps",
+  "steps": [
+    {
+      "observation": {
+        "app_name": "Home Screen",
+        "ui_elements": [
+          "Maps",
+          "Weather",
+          "Calendar",
+          "Photos"
+        ],
+        "screen_text": "Home"
+      },
+      "action": "CLICK(\"Maps\")",
+      "step_id": 0
+    },
+    {
+      "observation": {
+        "app_name": "Maps",
+        "ui_elements": [
+          "Search",
+          "Directions",
+          "Explore",
+          "Menu"
+        ],
+        "screen_text": "Google Maps"
+      },
+      "action": "CLICK(\"Search\")",
+      "step_id": 1
+    },
+    {
+      "observation": {
+        "app_name": "Maps",
+        "ui_elements": [
+          "Search box",
+          "Voice",
+          "Recent"
+        ],
+        "screen_text": "Search places"
+      },
+      "action": "TYPE(\"Central Park\")",
+      "step_id": 2
+    }
+  ]
+}

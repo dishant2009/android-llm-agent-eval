@@ -1,0 +1,53 @@
+{
+  "episode_id": "maps_navigate_001",
+  "steps": [
+    {
+      "observation": {
+        "app_name": "Home Screen",
+        "ui_elements": [
+          "Maps",
+          "Weather",
+          "Calendar",
+          "Photos"
+        ],
+        "screen_text": "Home"
+      },
+      "ground_truth": "CLICK(\"Maps\")",
+      "predicted": "CLICK('Maps')",
+      "exact_match": false,
+      "fuzzy_score": 85
+    },
+    {
+      "observation": {
+        "app_name": "Maps",
+        "ui_elements": [
+          "Search",
+          "Directions",
+          "Explore",
+          "Menu"
+        ],
+        "screen_text": "Google Maps"
+      },
+      "ground_truth": "CLICK(\"Search\")",
+      "predicted": "CLICK('Search')",
+      "exact_match": false,
+      "fuzzy_score": 87
+    },
+    {
+      "observation": {
+        "app_name": "Maps",
+        "ui_elements": [
+          "Search box",
+          "Voice",
+          "Recent"
+        ],
+        "screen_text": "Search places"
+      },
+      "ground_truth": "TYPE(\"Central Park\")",
+      "predicted": "CLICK('Search box')",
+      "exact_match": false,
+      "fuzzy_score": 26
+    }
+  ],
+  "success": false
+}

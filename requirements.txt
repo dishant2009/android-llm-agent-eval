@@ -1,0 +1,15 @@
+openai>=1.12.0
+anthropic>=0.18.0
+tiktoken>=0.6.0
+pydantic>=2.5.0
+python-dotenv>=1.0.0
+fuzzywuzzy>=0.18.0
+python-Levenshtein>=0.23.0
+jinja2>=3.1.0
+tqdm>=4.66.0
+pyyaml>=6.0.1
+pytest>=7.4.0
+aiohttp>=3.9.5 
+
+rich>=13.0.0
+streamlit>=1.35.0 

@@ -1,0 +1,60 @@
+{
+  "episode_id": "audio_recorder_001",
+  "goal": "Record an audio clip using Audio Recorder app and save it",
+  "steps": [
+    {
+      "observation": {
+        "app_name": "Home Screen",
+        "ui_elements": [
+          "Audio Recorder",
+          "Chrome",
+          "Settings",
+          "Files"
+        ],
+        "screen_text": "Home"
+      },
+      "action": "CLICK(\"Audio Recorder\")",
+      "step_id": 0
+    },
+    {
+      "observation": {
+        "app_name": "Audio Recorder",
+        "ui_elements": [
+          "Record",
+          "Play",
+          "List",
+          "Settings"
+        ],
+        "screen_text": "Audio Recorder"
+      },
+      "action": "CLICK(\"Record\")",
+      "step_id": 1
+    },
+    {
+      "observation": {
+        "app_name": "Audio Recorder",
+        "ui_elements": [
+          "Stop",
+          "Pause",
+          "Cancel"
+        ],
+        "screen_text": "Recording... 00:05"
+      },
+      "action": "CLICK(\"Stop\")",
+      "step_id": 2
+    },
+    {
+      "observation": {
+        "app_name": "Audio Recorder",
+        "ui_elements": [
+          "Save",
+          "Discard",
+          "Play"
+        ],
+        "screen_text": "Recording complete"
+      },
+      "action": "CLICK(\"Save\")",
+      "step_id": 3
+    }
+  ]
+}

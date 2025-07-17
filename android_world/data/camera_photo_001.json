@@ -1,0 +1,34 @@
+{
+  "episode_id": "camera_photo_001",
+  "goal": "Take a photo using Camera app",
+  "steps": [
+    {
+      "observation": {
+        "app_name": "Home Screen",
+        "ui_elements": [
+          "Camera",
+          "Gallery",
+          "Settings",
+          "Phone"
+        ],
+        "screen_text": "Home"
+      },
+      "action": "CLICK(\"Camera\")",
+      "step_id": 0
+    },
+    {
+      "observation": {
+        "app_name": "Camera",
+        "ui_elements": [
+          "Capture",
+          "Flash",
+          "Switch Camera",
+          "Gallery"
+        ],
+        "screen_text": "Camera ready"
+      },
+      "action": "CLICK(\"Capture\")",
+      "step_id": 1
+    }
+  ]
+}

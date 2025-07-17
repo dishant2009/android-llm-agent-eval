@@ -1,0 +1,83 @@
+{
+  "episode_id": "install_app_001",
+  "steps": [
+    {
+      "observation": {
+        "app_name": "Home Screen",
+        "ui_elements": [
+          "Play Store",
+          "Settings",
+          "Chrome",
+          "Camera"
+        ],
+        "screen_text": "Welcome to Android"
+      },
+      "ground_truth": "CLICK(\"Play Store\")",
+      "predicted": "CLICK('Play Store')",
+      "exact_match": false,
+      "fuzzy_score": 89
+    },
+    {
+      "observation": {
+        "app_name": "Play Store",
+        "ui_elements": [
+          "Search",
+          "Games",
+          "Apps",
+          "Movies"
+        ],
+        "screen_text": "Find apps and games"
+      },
+      "ground_truth": "CLICK(\"Search\")",
+      "predicted": "CLICK('Search')",
+      "exact_match": false,
+      "fuzzy_score": 87
+    },
+    {
+      "observation": {
+        "app_name": "Play Store",
+        "ui_elements": [
+          "Search box",
+          "Microphone",
+          "Camera"
+        ],
+        "screen_text": "Search for apps & games"
+      },
+      "ground_truth": "TYPE(\"Twitter\")",
+      "predicted": "CLICK('Search box')",
+      "exact_match": false,
+      "fuzzy_score": 24
+    },
+    {
+      "observation": {
+        "app_name": "Play Store",
+        "ui_elements": [
+          "Twitter",
+          "TweetDeck",
+          "Hootsuite"
+        ],
+        "screen_text": "Search results for Twitter"
+      },
+      "ground_truth": "CLICK(\"Twitter\")",
+      "predicted": "CLICK('Twitter')",
+      "exact_match": false,
+      "fuzzy_score": 88
+    },
+    {
+      "observation": {
+        "app_name": "Play Store",
+        "ui_elements": [
+          "Install",
+          "Screenshots",
+          "Reviews"
+        ],
+        "screen_text": "Twitter - Official App"
+      },
+      "ground_truth": "CLICK(\"Install\")",
+      "predicted": "CLICK('Install')",
+      "exact_match": false,
+      "fuzzy_score": 88
+    }
+  ],
+  "success": false
+}
